@@ -43,17 +43,23 @@ nav ul {
 }
 
 .hero {
+  position: relative;
   text-align: center;
   color: var(--very-light-grey);
   /* background-image: url(./images/bg-pattern-intro-right-mobile.svg);
   background-position: bottom right;
   background-repeat: no-repeat; */
 }
+
+.hero-image {
+  display: block;
+}
 .hero-text-container {
   top: -10px;
   position: relative;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
+  margin-bottom: 100px;
   background-color: var(--dark-violet);
 
   background-size: 30%;
@@ -62,6 +68,7 @@ nav ul {
     url(./images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  background-origin: padding-box;
   background-size: 30%;
 }
 
@@ -72,4 +79,39 @@ button {
   padding: 10px 20px 10px 20px;
   margin: 20px;
   color: var(--very-light-grey);
+  cursor: pointer;
+}
+
+.about-us {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greyline {
+  position: absolute;
+
+  height: 3px;
+  background-color: var(--dark-grayish-vioolet);
+  width: 200px;
+  align-items: center;
+}
+.about-us-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: var(--very-dark-violet);
+}
+.card-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card-container h3 {
+  margin: 20px;
+}
+
+.card-icon {
+  margin: 30px;
 }

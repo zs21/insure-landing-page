@@ -115,3 +115,53 @@ button {
 .card-icon {
   margin: 30px;
 }
+
+.how-we-work {
+  position: relative;
+  padding: 30px 20px 30px 20px;
+  background-color: var(--dark-violet);
+  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  text-align: center;
+  color: var(--very-light-grey);
+  background-size: 25%;
+  left: 5%;
+  max-width: 90%;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--very-light-grey);
+  padding-top: 30px;
+  margin-top: 60px;
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+footer .greyline {
+  width: 90%;
+  margin-left: 5%;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.bottom ul {
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer-card {
+  padding-top: 30px;
+}
+.footer-card h4 {
+  color: var(--grayish-blue);
+  padding: 10px;
+}
+.footer-card li {
+  padding: 5px;
+}

@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -22,4 +26,50 @@ body {
 
 hgroup {
   font-family: "DM Serif Display", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+nav ul {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  color: var(--very-light-grey);
+  /* background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat; */
+}
+.hero-text-container {
+  top: -10px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--dark-violet);
+
+  background-size: 30%;
+
+  background-image: url(./images/bg-pattern-intro-left-mobile.svg),
+    url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 30%;
+}
+
+button {
+  background-color: var(--dark-violet);
+  border-style: solid;
+  border-color: var(--very-light-grey);
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  color: var(--very-light-grey);
 }

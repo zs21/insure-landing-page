@@ -17,11 +17,14 @@
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--very-dark-violet);
 }
 
 body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  max-width: 375px;
 }
 
 hgroup {
@@ -43,33 +46,27 @@ nav ul {
 }
 
 .hero {
-  position: relative;
   text-align: center;
   color: var(--very-light-grey);
-  /* background-image: url(./images/bg-pattern-intro-right-mobile.svg);
-  background-position: bottom right;
-  background-repeat: no-repeat; */
-}
-
-.hero-image {
-  display: block;
 }
 .hero-text-container {
   top: -10px;
   position: relative;
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   margin-bottom: 100px;
   background-color: var(--dark-violet);
-
-  background-size: 30%;
 
   background-image: url(./images/bg-pattern-intro-left-mobile.svg),
     url(./images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-position: left top, right bottom -170px;
   background-origin: padding-box;
   background-size: 30%;
+}
+
+.hero-image {
+  display: block;
 }
 
 button {
@@ -83,7 +80,6 @@ button {
 }
 
 .about-us {
-  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -91,7 +87,7 @@ button {
 }
 
 .greyline {
-  position: absolute;
+  /* position: absolute; */
 
   height: 3px;
   background-color: var(--dark-grayish-vioolet);
@@ -164,4 +160,7 @@ footer .greyline {
 }
 .footer-card li {
   padding: 5px;
+}
+.footer-card a:active {
+  background-color: var(--grayish-blue);
 }
